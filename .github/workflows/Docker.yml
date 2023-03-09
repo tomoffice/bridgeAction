@@ -28,7 +28,7 @@ jobs:
           registry: docker.io
           repository: tomoffice/action_0
       - name: Run Docker image
-        uses: docker/run@v1
+        uses: docker/run@v2
         with:
           image: tomoffice/action_0:latest
           
