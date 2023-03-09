@@ -25,7 +25,10 @@ jobs:
           context: .
           push: true
           tags: tomoffice/action_0:latest
+          registry: docker.io
+          repository: tomoffice/action_0
       - name: Run Docker image
         uses: docker/run@v3
         with:
           image: tomoffice/action_0:latest
+          
